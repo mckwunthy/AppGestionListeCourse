@@ -1,0 +1,193 @@
+#app {
+    border: 5px solid var(--main-color);
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+#app h1 {
+    background-color: var(--main-color);
+    color: var(--main-color-white);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+}
+
+/**********app-hearder***********/
+.app-hearder {
+    justify-content: flex-end;
+    margin-right: 30px;
+    gap: 30px;
+}
+
+.app-hearder .input-box {
+    width: 450px;
+}
+
+.app-hearder .input-box input {
+    width: 100%;
+    height: 35px;
+    /* border-radius: 50px 50px 0 0; */
+    border-radius: 10px;
+    padding-left: 20px;
+    outline: none;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    background-color: var(--main-color-efefef);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.app-hearder .input-box input:invalid {
+    background-color: var(--main-color-red);
+}
+
+.app-hearder .add-bt {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: var(--main-color-white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.app-hearder .empty-all {
+    right: 20px;
+    bottom: 20px;
+    border: 2px solid var(--main-color-gray);
+    height: 30px;
+    width: 110px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-transform: capitalize;
+    background-color: var(--main-color);
+    color: var(--main-color-white);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/**********app-body***********/
+.app-body {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    overflow: auto;
+    /* border: 1px solid blue; */
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.app-body .article {
+    border: 5px ridge var(--main-color);
+    width: 90%;
+    height: 80px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+
+.app-body .article .delete-article {
+    position: absolute;
+    right: 5px;
+    top: -15px;
+    /* border: 1px solid var(--main-color); */
+    background-color: var(--main-color-red);
+    border: 5px solid var(--main-color);
+    color: var(--main-color-white);
+    padding: 2px;
+    /* border-radius: 30px 10px 0 0; */
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.app-body .article .article-buy {
+    text-transform: uppercase;
+    color: var(--main-color-gray);
+    margin: 5px;
+    cursor: pointer;
+}
+
+.app-body .article .article-buy i {
+    font-size: 2rem;
+}
+
+.buy-text {
+    font-size: 1rem;
+    color: var(--main-color-efefef);
+}
+
+.app-body .article .article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.app-body .article .article-content .article-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main-color);
+    /* font-size: 1.2rem; */
+}
+
+.app-body .article .article-content .article-createAt {
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    color: var(--main-color-gray);
+}
+
+/**********XXXXXXXXXXXXXX***********/
+/**********XXXXXXXXXXXXXX***********/
+/**********XXXXXXXXXXXXXX***********/
+/**********XXXXXXXXXXXXXX***********/
+/**********XXXXXXXXXXXXXX***********/
+/**********XXXXXXXXXXXXXX***********/
+/***********wrong and correct and aucune*************/
+.achete {
+    color: var(--main-color);
+    font-weight: bold
+}
+
+.bg-c {
+    background-color: var(--main-color-green);
+}
+
+.over {
+    border: 2px dashed var(--main-color);
+}
+
+.wrong {
+    border: 1px solid var(--main-color-red);
+}
+
+.correct {
+    border: 1px solid var(--main-color-green);
+}
+
+.aucune {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    color: var(--main-color-red);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.boxInformations {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 100px;
+    padding: 10px;
+}

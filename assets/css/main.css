@@ -1,0 +1,14 @@
+/*google font*/
+@import url(https://fonts.googleapis.com/css2?family=Anta&display=swap);
+
+/*insertion de fontaweqone*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+/*insertion de framework*/
+@import url(/assets/css/MyFrameworkCSS/framework.css);
+@import url(/assets/css/MyFrameworkCSS/color.css);
+@import url(/assets/css/MyFrameworkCSS/color.css);
+@import url(/assets/css/MyFrameworkCSS/size.css);
+
+/*insertion de style*/
+@import url(/assets/css/style.css);

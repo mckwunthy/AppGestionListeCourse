@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>App Liste de course</title>
+		<link rel="stylesheet" href="/assets/css/main.css">
+	</head>
+	<body>
+		<div id="app">
+			<h1>application de gestion de liste de course</h1>
+			<div id="container" class="relative">
+				<div class="app-hearder flex aic">
+					<div class="input-box">
+						<form action="#" name="listForm">
+							<input type="text" name="listeInput" placeholder="Liste de course" pattern="[a-zA-Z ]{3,30}">
+						</form>
+					</div>
+					<div class="add-bt">
+						<i class="fa-solid fa-plus"></i>
+					</div>
+					<div class="empty-all absolute">
+						vider la liste
+					</div>
+				</div>
+				<div class="app-body start flex flex-column gap-50 jcc aic" draggable="true">
+					<div class="article">
+						<div class="delete-article">delete</div>
+						<div class="article-buy flex flex-column gap-5 aic jcc">
+							<i class="fa-regular fa-square none"></i>
+							<i class="fa-solid fa-square-check"></i>
+							<div class="buy-text">buy</div>
+						</div>
+						<div class="article-content flex-1 flex flex-column gap-5 marg-t-15">
+							<div class="article-title">acheter une pompe a essence ari</div>
+							<div class="article-createAt">crée le 12 mai 22 à 20h20</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="/assets/js/listeValidator.js"></script>
+		<script type="module" src="/assets/js/app.js"></script>
+	</body>
+</html>
