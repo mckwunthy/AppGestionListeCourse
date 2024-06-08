@@ -15,24 +15,29 @@ window.onload = async () => {
     //on affiche la liste des taches à partir des donnees sauvegardees dans indexDB
     var listDataGet = await getAllList()
 
-    let articles
-    listDataGet.forEach(list => {
-        articles += `
-                    <div class="article" id="${list._id}" draggable="true">
-						<div class="delete-article" data-id="${list._id}">delete</div>
-						<div class="article-buy flex flex-column gap-5 aic jcc">
-							<i class="fa-regular fa-square"></i>
-							<i class="fa-solid fa-square-check none"></i>
-							<div class="buy-text">acheté</div>
-						</div>
-						<div class="article-content flex-1 flex flex-column gap-5 marg-t-15">
-							<div class="article-title">${list.title}</div>
-							<div class="article-createAt">${list.createdAt}</div>
-						</div>
-					</div>
-        `
-    });
-    document.querySelector('.app-body').innerHTML = articles
+    let articles = ""
+
+    if (listDataGet.length) {
+        listDataGet.forEach(list => {
+            articles += `
+                        <div class="article" id="${list._id}" draggable="true">
+                            <div class="delete-article" data-id="${list._id}">delete</div>
+                            <div class="article-buy flex flex-column gap-5 aic jcc">
+                                <i class="fa-regular fa-square"></i>
+                                <i class="fa-solid fa-square-check none"></i>
+                                <div class="buy-text">acheté</div>
+                            </div>
+                            <div class="article-content flex-1 flex flex-column gap-5 marg-t-15">
+                                <div class="article-title">${list.title}</div>
+                                <div class="article-createAt">${list.createdAt}</div>
+                            </div>
+                        </div>
+            `
+        });
+
+        document.querySelector('.app-body').innerHTML = articles
+    }
+
     if (!listDataGet.length) {
         document.querySelector('.app-body').innerHTML = "<div>aucunes donnees à afficher</div>"
     }
